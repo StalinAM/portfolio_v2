@@ -1,0 +1,83 @@
+<header
+  id="landing-header"
+  class="z-50 flex px-10 pt-6 pb-4 md:px-4 md:py-2 justify-between items-center w-full fixed top-0 left-0 bg-[#13111c]"
+>
+  <div class="flex flex-grow basis-0">
+    <h2 class="font-bold text-3xl text-js md:text-2xl">
+      <a href="#">SVAM</a>
+    </h2>
+  </div>
+  <nav
+    class="md:hidden font-medium text-gray-100 [&>ul>li>a]:rounded [&>ul>li>a]:px-3 md:hover:[&>ul>li>a]:bg-js/60 [&>ul>li>a]:py-1 md:w-full transition md:absolute md:top-12 md:right-4 md:[&>ul>li>a]:w-full md:[&>ul>li>a]:block md:bg-[#13111c] md:rounded"
+  >
+    <ul
+      class="flex relative md:flex-col gap-6 lg:gap-4 [&>li]:cursor-pointer md:w-full md:p-4 md:items-center"
+    >
+      <li><a href="#about">Sobre mi</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="flex md:gap-4 flex-grow basis-0 justify-end">
+    <a
+      href="CV.pdf"
+      target="_blank"
+      class="px-3 py-1 md:px-2 font-semibold bg-gray-100 text-black hover:bg-js hover:border-js text-base md:text-sm border rounded-lg transition-colors"
+      >Descargar CV</a
+    >
+    <button
+      id="open-menu"
+      class="hidden md:block px-3 py-1 md:px-2 font-semibold hover:bg-js hover:border-js text-base md:text-sm border rounded-lg transition-colors"
+      ><svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="#ffffff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"></path>
+      </svg></button
+    >
+  </div>
+
+  <div
+    id="menu-backdrop"
+    class={`
+      absolute bg-js/80  rounded
+      left-[var(--left)] top-[var(--top)]
+      w-[var(--width)] h-[var(--height)]
+      transition-all duration-500
+      ease-in-out opacity-0 -z-10 md:hidden
+    `}
+  >
+  </div>
+</header>
+<script>
+  import { showMenuOnHover } from "../utils/menu_backdrop";
+  const btnOpemMenu = document.querySelector("#open-menu");
+  const navBar = document.querySelector("nav");
+  const header = document.querySelector("#landing-header") as HTMLElement;
+
+  showMenuOnHover();
+
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 79) {
+      header.classList.add("shadow-[0px_10px_30px_-27px_#ffffff14]");
+    } else {
+      header.classList.remove("shadow-[0px_10px_30px_-27px_#ffffff14]");
+    }
+  });
+  btnOpemMenu.addEventListener("click", () => {
+    if (navBar.classList.value.includes("hidden")) {
+      navBar.classList.remove("md:hidden");
+    } else {
+      navBar.classList.add("md:hidden");
+    }
+  });
+</script>
