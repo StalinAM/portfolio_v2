@@ -1,0 +1,44 @@
+---
+import Github from "./logos/GitHub.astro";
+import Linkedin from "./logos/Linkedin.astro";
+---
+
+<section
+  id="about"
+  class="flex gap-7 justify-center h-screen w-full max-w-5xl mx-auto md:flex-wrap-reverse md:gap-2 sm:justify-start md:mt-12 md:h-auto"
+>
+  <div class="flex flex-col gap-5 justify-center">
+    <header class="flex justify-start flex-col gap-1">
+      <h1 class="text-6xl md:text-5xl font-bold">Stalin Acurio</h1>
+      <span class="text-4xl md:text-3xl text-css dark:text-js font-medium"
+        >Front-End Developer</span
+      >
+    </header>
+    <p class="text-lg md:text-base tex max-w-[60ch]">
+      Me encanta explorar el mundo del desarrollo web y experimentar con
+      tecnologías modernas para construir interfaces intuitivas y visualmente
+      atractivas.
+    </p>
+    <ul class="flex gap-4 [&>li>a]:w-7 [&>li>a]:inline-block">
+      <li class="group cursor-pointer">
+        <a
+          class="transition group-hover:scale-125 [&>svg]:dark:fill-js [&>svg]:fill-css"
+          href="https://github.com/StalinAM"
+          target="_blank"
+        >
+          <Github />
+        </a>
+      </li>
+      <li class="group">
+        <a
+          class="transition group-hover:scale-125 [&>svg]:dark:fill-js [&>svg]:fill-css"
+          href="https://www.linkedin.com/in/stalin-acurio-915561248/"
+          target="_blank"><Linkedin /></a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="m-auto flex justify-center">
+    <img class="md:max-w-[80%]" src="home.png" alt="" />
+  </div>
+</section>
