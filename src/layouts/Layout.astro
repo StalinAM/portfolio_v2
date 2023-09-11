@@ -21,8 +21,16 @@ const { title } = Astro.props;
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("ZD_8FYGrpSoVVUwFY");
+    </script>
   </head>
-  <body>
+  <body class="dark:bg-dark bg-light">
     <slot />
   </body>
 </html>
