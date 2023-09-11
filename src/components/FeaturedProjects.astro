@@ -5,7 +5,7 @@ const { id, title, image, description, tools, web, repo } = Astro.props;
 <li class="mb-[100px]">
   <article class="grid grid-cols-11 items-center">
     <div
-      class=`${ id % 2 != 0? 'col-start-1 col-end-7' : 'col-start-6 col-end-12' } dark:opacity-70 hover:opacity-100 transition sm:opacity-10 sm:col-start-1 sm:col-end-[-1] sm:z-10 sm:object-cover sm:h-full row-start-1 row-end-1 rounded overflow-hidden border-2 dark:border-none border-css`
+      class=`${ id % 2 != 0? 'col-start-1 col-end-7' : 'col-start-6 col-end-12' } dark:opacity-80 hover:opacity-100 transition sm:opacity-10 sm:col-start-1 sm:col-end-[-1] sm:z-10 sm:object-cover sm:h-full row-start-1 row-end-1 rounded overflow-hidden`
     >
       <a class="relative z-20 group sm:h-full" href={web} target="_blank">
         <img
@@ -47,7 +47,7 @@ const { id, title, image, description, tools, web, repo } = Astro.props;
           }
         </ul>
         <a
-          class="w-7 group cursor-pointer [&>svg]:dark:fill-slate-300"
+          class="w-7 group cursor-pointer [&>svg]:dark:fill-slate-300 [&>svg]:fill-slate-800"
           href={repo}
           target="_blank"
         >
