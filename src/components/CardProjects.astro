@@ -1,5 +1,5 @@
 ---
-const { title, image, description, tools, web, repo } = Astro.props;
+const { title, image, description, tools, web, repo, id } = Astro.props;
 ---
 
 <li>
@@ -7,11 +7,15 @@ const { title, image, description, tools, web, repo } = Astro.props;
     class="flex flex-col justify-between h-full dark:bg-[#222831] bg-white border-gray-400"
   >
     <div>
-      <div class="rounded overflow-hidden">
-        <a class="relative z-20 group" href={web} target="_blank">
-          <img class="object-cover w-full" src={image} alt={description} />
-        </a>
-      </div>
+      {
+        image && (
+          <div class="rounded overflow-hidden">
+            <a class="relative z-20 group" href={web} target="_blank">
+              <img class="object-cover w-full" src={image} alt={description} />
+            </a>
+          </div>
+        )
+      }
       <div class="p-4 flex flex-col gap-2">
         <header>
           <a class="inline-block relative" href={web} target="_blank">
