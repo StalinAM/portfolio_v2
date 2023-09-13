@@ -12,6 +12,9 @@ const { id, title, image, description, tools, web, repo } = Astro.props;
           class="object-cover w-full sm:h-full"
           src={image}
           alt={description}
+          transition:name={`image-project-${id}`}
+          width="500"
+          height="300"
         />
       </a>
     </div>
@@ -22,13 +25,14 @@ const { id, title, image, description, tools, web, repo } = Astro.props;
         <a class="inline-block relative" href={web} target="_blank">
           <h3
             class="cursor-pointer text-4xl font-medium dark:hover:text-js hover:text-css md:text-3xl"
+            transition:name={`title-project-${id}`}
           >
             {title}
           </h3>
         </a>
       </header>
       <div
-        class="relative dark:bg-[#222831] bg-white p-6 rounded text-lg md:text-base dark:text-gray-200 text-gray-800 z-30"
+        class="relative dark:bg-[#222831] bg-white p-6 rounded text-lg md:text-base dark:text-gray-200 text -gray-800 z-30"
       >
         <p>{description}</p>
       </div>

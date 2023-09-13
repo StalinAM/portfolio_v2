@@ -41,7 +41,7 @@ export const components = [
 export const data = [
   {
     id: 12,
-    image: "https://i.ibb.co/ThSCKNB/Dise-o-sin-t-tulo.png",
+    image: "https://i.ibb.co/n7hTb33/1.webp",
     title: "Daniks Shop",
     description:
       "Aplicación de tienda en línea que permite a los usuarios realizar compras y los redirige a WhatsApp con los detalles de los productos seleccionados.",
@@ -52,7 +52,7 @@ export const data = [
   },
   {
     id: 11,
-    image: "https://i.ibb.co/C5C6c9Y/Easy-Money.webp",
+    image: "https://i.ibb.co/wJ09TwQ/2.webp",
     title: "EasyMoney",
     description:
       "App web de finanzas personales, diseñada para simplificar la gestión del dinero, permite llevar un seguimiento rápido y fácil de los gastos y te ayuda a ahorrar.",
@@ -63,7 +63,7 @@ export const data = [
   },
   {
     id: 10,
-    image: "https://i.ibb.co/WfwD6Xw/project10.webp",
+    image: "https://i.ibb.co/0q7YLMP/4.webp",
     title: "Hydra",
     description:
       "Desarrollé este sitio web siguiendo un diseño proporcionado por Zine, incluyendo efectos que crean una experiencia de realidad virtual.",
@@ -86,6 +86,7 @@ export const data = [
   {
     id: 8,
     image: "https://i.ibb.co/qmxdf6d/project8.webp",
+    imageBig: "https://i.ibb.co/t2qR2gp/3.webp",
     title: "Space Turism",
     description:
       "El sitio web de turismo espacial brinda información detallada sobre los destinos, la tripulación y la tecnología avanzada empleada en cada viaje interestelar.",
