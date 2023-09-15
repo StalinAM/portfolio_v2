@@ -40,7 +40,7 @@ export const components = [
 ];
 export const data = [
   {
-    id: 12,
+    id: 16,
     image: "https://i.ibb.co/n7hTb33/1.webp",
     title: "Daniks Shop",
     description:
@@ -51,7 +51,7 @@ export const data = [
     repository: "https://github.com/StalinAM/product_catalog",
   },
   {
-    id: 11,
+    id: 15,
     image: "https://i.ibb.co/wJ09TwQ/2.webp",
     title: "EasyMoney",
     description:
@@ -62,7 +62,7 @@ export const data = [
     repository: "https://github.com/StalinAM/easy-money-app.git",
   },
   {
-    id: 10,
+    id: 14,
     image: "https://i.ibb.co/0q7YLMP/4.webp",
     title: "Hydra",
     description:
@@ -73,7 +73,7 @@ export const data = [
     repository: "https://github.com/StalinAM/hydra-landing-page.git",
   },
   {
-    id: 9,
+    id: 13,
     image: "https://i.ibb.co/h27MMfk/project9.webp",
     title: "GalloExpre C.A.",
     description:
@@ -84,7 +84,7 @@ export const data = [
     repository: "https://github.com/StalinAM/galloexpre.git",
   },
   {
-    id: 8,
+    id: 12,
     image: "https://i.ibb.co/qmxdf6d/project8.webp",
     imageBig: "https://i.ibb.co/t2qR2gp/3.webp",
     title: "Space Turism",
@@ -96,7 +96,7 @@ export const data = [
     repository: "https://github.com/StalinAM/space-tourism.git",
   },
   {
-    id: 7,
+    id: 11,
     image: "https://i.ibb.co/jM0hsCc/project7.webp",
     title: "Piedra, Papel o Tijera",
     description:
@@ -107,7 +107,7 @@ export const data = [
     repository: "https://github.com/StalinAM/rock-paper-scissers-react",
   },
   {
-    id: 6,
+    id: 10,
     image: "https://i.ibb.co/k6TJNPR/project6.webp",
     title: "Portafolio",
     description:
@@ -118,7 +118,7 @@ export const data = [
     repository: "https://github.com/StalinAM/portfolio-figma",
   },
   {
-    id: 5,
+    id: 9,
     image: "https://i.ibb.co/tsppYSn/project5.webp",
     title: "Plantilla para portafolio web",
     description:
@@ -129,7 +129,7 @@ export const data = [
     repository: "https://github.com/StalinAM/PortfolioPersonal",
   },
   {
-    id: 4,
+    id: 8,
     image: "https://i.ibb.co/wMzG9VX/project4.webp",
     title: "Sunnyside",
     description:
@@ -140,7 +140,7 @@ export const data = [
     repository: "https://github.com/StalinAM/sunny-agengy",
   },
   {
-    id: 3,
+    id: 7,
     image: "https://i.ibb.co/C9SJP3s/project3.webp",
     title: "Crowdfunding",
     description:
@@ -151,7 +151,7 @@ export const data = [
     repository: "https://github.com/StalinAM/crowfunding-product-page",
   },
   {
-    id: 2,
+    id: 6,
     image: "https://i.ibb.co/0K1FCvr/project2.webp",
     title: "Aplicación Generadora de Consejos",
     description:
@@ -162,7 +162,7 @@ export const data = [
     repository: "https://github.com/StalinAM/adviceGeneratorApp",
   },
   {
-    id: 1,
+    id: 5,
     image: "https://i.ibb.co/1RyJFZM/project1.webp",
     title: "Fylo",
     description:
