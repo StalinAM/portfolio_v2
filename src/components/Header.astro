@@ -1,6 +1,7 @@
 <header
   id="landing-header"
   class="z-50 flex px-10 py-4 md:px-4 md:py-3 justify-between items-center w-full fixed top-0 left-0 dark:bg-dark bg-light"
+  transition:persist="header"
 >
   <div class="flex flex-grow basis-0">
     <a
@@ -20,7 +21,7 @@
     >
   </div>
   <nav
-    class="md:hidden font-medium dark:text-gray-100 [&>ul>li>a]:rounded [&>ul>li>a]:px-3 md:hover:[&>ul>li>a]:bg-css/60 [&>ul>li>a]:py-1 md:w-full transition md:absolute md:top-12 md:left-0 md:[&>ul>li>a]:w-full md:[&>ul>li>a]:block md:bg-dark"
+    class="md:hidden font-medium dark:text-gray-100 [&>ul>li>a]:rounded [&>ul>li>a]:px-3 md:hover:[&>ul>li>a]:bg-css/60 dark:md:hover:[&>ul>li>a]:bg-js/60 [&>ul>li>a]:py-1 md:w-full transition md:absolute md:top-12 md:left-0 md:[&>ul>li>a]:w-full md:[&>ul>li>a]:block md:bg-dark"
   >
     <ul
       class="flex relative md:flex-col gap-6 lg:gap-4 [&>li]:cursor-pointer md:w-full md:p-4 md:items-center"
@@ -82,6 +83,7 @@
     }
   });
   btnOpemMenu.addEventListener("click", () => {
+    console.log("hola");
     if (navBar.classList.value.includes("hidden")) {
       navBar.classList.remove("md:hidden");
     } else {
