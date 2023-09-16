@@ -114,7 +114,7 @@ export const data = [
       "Mi portafolio web donde encontrarás mi trabajo y habilidades en diseño, desarrollo y tecnología, con ejemplos de proyectos anteriores.",
     tools: ["React.js", "Styled Components", "React Router"],
     category: "complete",
-    web: "https://svam.netlify.app/",
+    web: "https://svam-v1.netlify.app/",
     repository: "https://github.com/StalinAM/portfolio-figma",
   },
   {
