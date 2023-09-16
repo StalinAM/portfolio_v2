@@ -16,7 +16,13 @@ const { id, title, image, description, tools, web, repository } = Astro.props;
     <div
       class=`${ id % 2 != 0? 'col-start-1 col-end-7' : 'col-start-6 col-end-12' } dark:opacity-80 hover:opacity-100 transition sm:opacity-10 sm:col-start-1 sm:col-end-[-1] sm:z-10 sm:object-cover sm:h-full row-start-1 row-end-1 rounded overflow-hidden`
     >
-      <a class="relative z-20 group sm:h-full" href={web} target="_blank">
+      <a
+        class="relative z-20 group sm:h-full"
+        href={web}
+        target="_blank"
+        aria-label="Enlace al sitio del proyecto"
+        rel="noopener noreferrer"
+      >
         <img
           class="object-cover w-full sm:h-full"
           src={image}
@@ -35,7 +41,7 @@ const { id, title, image, description, tools, web, repository } = Astro.props;
           class="inline-block relative"
           href={web}
           target="_blank"
-          aria-label="Enlace al repositorio en GitHub"
+          aria-label="Enlace al sitio del proyecto"
           rel="noopener noreferrer"
         >
           <h3
@@ -69,6 +75,8 @@ const { id, title, image, description, tools, web, repository } = Astro.props;
           class="w-7 group cursor-pointer [&>svg]:dark:fill-slate-300 [&>svg]:fill-slate-800"
           href={repository}
           target="_blank"
+          aria-label="Enlace al repositorio de Github"
+          rel="noopener noreferrer"
         >
           <svg width="100%" viewBox="0 0 128 128">
             <path
