@@ -16,6 +16,8 @@ const { title, image, description, tools, web, repo, id } = Astro.props;
                 src={image}
                 alt={description}
                 transition:name={`image-project-${id}`}
+                width="500"
+                height="300"
               />
             </a>
           </div>
@@ -40,6 +42,8 @@ const { title, image, description, tools, web, repo, id } = Astro.props;
         class="w-7 group cursor-pointer [&>svg]:dark:fill-gray-300 [&>svg]:fill-slate-800"
         href={repo}
         target="_blank"
+        aria-label="Enlace al repositorio en GitHub"
+        rel="noopener noreferrer"
       >
         <svg width="100%" viewBox="0 0 128 128">
           <path
