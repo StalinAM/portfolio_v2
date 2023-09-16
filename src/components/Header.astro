@@ -70,7 +70,13 @@
   const btnOpemMenu = document.querySelector("#open-menu");
   const navBar = document.querySelector("nav");
   const header = document.querySelector("#landing-header") as HTMLElement;
+  const links = document.querySelectorAll("nav ul li a");
 
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      navBar.classList.add("md:hidden");
+    });
+  });
   showMenuOnHover();
 
   window.addEventListener("scroll", () => {
@@ -83,7 +89,6 @@
     }
   });
   btnOpemMenu.addEventListener("click", () => {
-    console.log("hola");
     if (navBar.classList.value.includes("hidden")) {
       navBar.classList.remove("md:hidden");
     } else {
