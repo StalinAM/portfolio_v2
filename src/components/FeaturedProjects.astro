@@ -31,7 +31,13 @@ const { id, title, image, description, tools, web, repository } = Astro.props;
       class=`${ id % 2 != 0? 'col-start-6 col-end-12 text-end' : 'col-start-1 col-end-7 text-start' } sm:text-start sm:z-20 sm:col-start-1 sm:col-end-[-1] sm:p-4 row-start-1 row-end-1 `
     >
       <header class="mb-5">
-        <a class="inline-block relative" href={web} target="_blank">
+        <a
+          class="inline-block relative"
+          href={web}
+          target="_blank"
+          aria-label="Enlace al repositorio en GitHub"
+          rel="noopener noreferrer"
+        >
           <h3
             class="cursor-pointer text-4xl font-medium dark:hover:text-js hover:text-css md:text-3xl"
             transition:name={`title-project-${id}`}
