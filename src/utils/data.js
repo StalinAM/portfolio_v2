@@ -52,7 +52,7 @@ export const data = [
   },
   {
     id: 16,
-    image: "https://i.ibb.co/DrtNXcK/aluraflix.webp",
+    image: "https://i.ibb.co/m6SGYpc/aluraflix.webp",
     title: "Aluraflix",
     description:
       "Plataforma similar a Netflix, pero enfocada en los cursos de Alura. Aquí los usuarios podrán explorar una amplia gama de cursos organizados por categorías, y tendrán la capacidad de contribuir al contenido al agregar nuevos videos y categorías.",
