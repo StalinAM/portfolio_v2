@@ -6,8 +6,8 @@ export const components = [
       "Componente para ingresar información de tarjetas de crédito y mostrar su actualización en tiempo real.",
     tools: ["JavaScript", "CSS"],
     category: "component",
-    web: "https://stalinam.github.io/expenses-chart-component/",
-    repository: "https://github.com/StalinAM/expenses-chart-component",
+    web: "https://stalinam.github.io/InteractiveCardDetailsForm/",
+    repository: "https://github.com/StalinAM/InteractiveCardDetailsForm",
   },
   {
     id: 2,
@@ -16,8 +16,8 @@ export const components = [
       "Componente que muestra un gráfico de los gastos de la semana anterior.",
     tools: ["JavaScript", "CSS"],
     category: "component",
-    web: "https://stalinam.github.io/InteractiveCardDetailsForm/",
-    repository: "https://github.com/StalinAM/InteractiveCardDetailsForm",
+    web: "https://stalinam.github.io/expenses-chart-component/",
+    repository: "https://github.com/StalinAM/expenses-chart-component",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ export const components = [
     description: "API para administrar números de contacto.",
     tools: ["Express", "Mongoose"],
     category: "component",
-    web: "https://kind-red-turtle-tie.cyclic.app/api/persons",
+    web: "https://github.com/StalinAM/starter-express-api",
     repository: "https://github.com/StalinAM/starter-express-api",
   },
 ];
