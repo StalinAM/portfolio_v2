@@ -40,7 +40,7 @@ export const components = [
 ];
 export const data = [
   {
-    id: 16,
+    id: 17,
     image: "https://i.ibb.co/n7hTb33/1.webp",
     title: "Daniks Shop",
     description:
@@ -49,6 +49,23 @@ export const data = [
     category: "complete",
     web: "https://www.linkedin.com/posts/stalinam_hola-comunidad-de-linkedin-hoy-estoy-emocionado-activity-7086883471536627713-6sPP?utm_source=share&utm_medium=member_desktop",
     repository: "https://github.com/StalinAM/product_catalog",
+  },
+  {
+    id: 16,
+    image: "https://i.ibb.co/DrtNXcK/aluraflix.webp",
+    title: "Aluraflix",
+    description:
+      "Plataforma similar a Netflix, pero enfocada en los cursos de Alura. Aquí los usuarios podrán explorar una amplia gama de cursos organizados por categorías, y tendrán la capacidad de contribuir al contenido al agregar nuevos videos y categorías.",
+    tools: [
+      "React.js",
+      "Tailwind",
+      "React Router",
+      "Json-Server",
+      "React-slick",
+    ],
+    category: "complete",
+    web: "https://svam-aluraflix.netlify.app/",
+    repository: "https://github.com/StalinAM/aluraflix",
   },
   {
     id: 15,
