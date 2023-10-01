@@ -2,7 +2,7 @@
 const { title, image, description, tools, web, repo, id } = Astro.props;
 ---
 
-<li>
+<li class="hover:-translate-y-3 transition-transform">
   <div
     class="flex flex-col justify-between h-full dark:bg-dark-light bg-white border-gray-400"
   >
@@ -37,7 +37,7 @@ const { title, image, description, tools, web, repo, id } = Astro.props;
         <p>{description}</p>
       </div>
     </div>
-    <footer class="flex flex-col gap-4 pb-4 px-4">
+    <footer class="flex flex-col gap-4 pb-4 px-4 =">
       <a
         class="w-7 group cursor-pointer [&>svg]:dark:fill-gray-300 [&>svg]:fill-slate-800"
         href={repo}
