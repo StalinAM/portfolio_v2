@@ -22,8 +22,8 @@ module.exports = {
     extend: {
       colors: {
         js: "#fbae17",
-        dark: "#1c1c1c",
-        "dark-light": "#222222",
+        dark: "#212126",
+        "dark-light": "#2f2f37",
         light: "#f5f5f5",
         css: "#0070ba",
       },
