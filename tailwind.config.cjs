@@ -22,9 +22,10 @@ module.exports = {
     extend: {
       colors: {
         js: "#fbae17",
-        dark: "#212126",
-        "dark-light": "#2f2f37",
+        dark: "#13111C",
+        "dark-light": "#1c1a2b",
         light: "#f5f5f5",
+        "light-2": "#ededed",
         css: "#0070ba",
       },
     },
