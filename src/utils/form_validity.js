@@ -68,6 +68,10 @@ export const validateForm = () => {
     e.preventDefault();
     successSpan.classList.remove("hidden");
 
+    email.value = "";
+    name.value = "";
+    message.value = "";
+
     const serviceID = "default_service";
     const templateID = "template_zslq32f";
 
