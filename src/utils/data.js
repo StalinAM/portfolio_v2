@@ -137,7 +137,7 @@ export const data = [
   {
     id: 9,
     image: "https://i.ibb.co/Rvk74cp/7.webp",
-    title: "Plantilla para portafolio web",
+    title: "Plantilla portafolio web",
     description:
       "Portafolio de desarrollador web que cuenta con varias secciones, donde se exhiben los proyectos filtrados por categorías y con un formulario de contacto.",
     tools: ["React.js", "Styled Components"],
@@ -170,7 +170,7 @@ export const data = [
   {
     id: 6,
     image: "https://i.ibb.co/7GZsFm3/12.webp",
-    title: "Aplicación Generadora de Consejos",
+    title: "Generador de Consejos",
     description:
       "Sitio web en el cual al hacer clic en el icono verde, se genera un consejo aleatorio mediante una llamada a una API.",
     tools: ["React.js", "CSS", "API Advice Slip"],
