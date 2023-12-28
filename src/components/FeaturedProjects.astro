@@ -14,7 +14,7 @@ const { id, title, image, description, tools, web, repository } = Astro.props;
 <li class="mb-[100px]">
   <article class="grid grid-cols-11 items-center">
     <div
-      class=`${ id % 2 != 0? 'col-start-1 col-end-7' : 'col-start-6 col-end-12' } lg:dark:opacity-80 hover:opacity-100 transition sm:opacity-20 sm:col-start-1 sm:col-end-[-1] sm:z-10 sm:object-cover sm:h-full row-start-1 row-end-1 rounded overflow-hidden`
+      class=`${ id % 2 != 0? 'col-start-1 col-end-7' : 'col-start-6 col-end-12' }  hover:opacity-100 transition opacity-80 sm:opacity-20 sm:col-start-1 sm:col-end-[-1] sm:z-10 sm:object-cover sm:h-full row-start-1 row-end-1 rounded overflow-hidden`
     >
       <a
         class="relative z-20 group sm:h-full"
