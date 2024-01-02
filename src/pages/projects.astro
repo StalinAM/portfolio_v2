@@ -1,22 +1,25 @@
 ---
-import CardProjects from "../components/CardProjects.astro";
-import Contact from "../components/Contact.astro";
-import Layout from "../layouts/Layout.astro";
-import { data, components } from "../utils/data";
+import CardProjects from '../components/CardProjects.astro'
+import Contact from '../components/Contact.astro'
+import Layout from '../layouts/Layout.astro'
+import { data, components } from '../utils/data'
 ---
 
-<Layout title="proyectos ">
+<Layout
+  title='Lista de proyectos'
+  description='Explora mi portafolio web y sumérgete en una galería de proyectos que reflejan mi dedicación al desarrollo web. Descubre soluciones innovadoras y diseños cautivadores que cuentan la historia de mi pasión por crear experiencias digitales memorables.'
+>
   <main
-    class="w-full min-h-screen overflow-x-hidden dark:text-gray-100 p-4 mb-8"
+    class='w-full min-h-screen overflow-x-hidden dark:text-gray-100 p-4 mb-8'
   >
     <section
-      id="projects"
-      class="pt-24 sm:pt-12 flex flex-col w-full max-w-5xl mx-auto"
+      id='projects'
+      class='pt-24 sm:pt-12 flex flex-col w-full max-w-5xl mx-auto'
     >
-      <h3 class="text-3xl font-medium text-left mb-10 dark:text-js text-css">
+      <h3 class='text-3xl font-medium text-left mb-10 dark:text-js text-css'>
         Webs
       </h3>
-      <ul class="grid grid-cols-box-x gap-8 mb-4">
+      <ul class='grid grid-cols-box-x gap-8 mb-4'>
         {
           data.map((item) => (
             <CardProjects
@@ -32,11 +35,11 @@ import { data, components } from "../utils/data";
         }
       </ul>
       <h3
-        class="mt-8 text-3xl font-medium text-left mb-10 dark:text-js text-css"
+        class='mt-8 text-3xl font-medium text-left mb-10 dark:text-js text-css'
       >
         Componentes
       </h3>
-      <ul class="grid grid-cols-box-x gap-8 mb-4">
+      <ul class='grid grid-cols-box-x gap-8 mb-4'>
         {
           components.map((item) => (
             <CardProjects
