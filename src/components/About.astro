@@ -1,60 +1,72 @@
 ---
-import Github from "./logos/GitHub.astro";
-import Linkedin from "./logos/Linkedin.astro";
+import Github from './logos/GitHub.astro'
+import Linkedin from './logos/Linkedin.astro'
+import Download from './logos/Download.astro'
 ---
 
 <section
-  id="about"
-  class="flex gap-7 justify-center w-full max-w-5xl mt-24 mx-auto md:flex-wrap-reverse md:gap-2 sm:justify-start md:mt-12 md:h-auto"
+  id='about'
+  class='flex gap-7 justify-center w-full max-w-5xl mt-24 mx-auto md:flex-wrap-reverse md:gap-2 sm:justify-start md:mt-12 md:h-auto'
 >
-  <div class="flex flex-col gap-5 justify-center">
-    <header class="flex justify-start flex-col gap-1">
-      <h1 class="text-6xl md:text-5xl font-bold">Stalin Acurio</h1>
-      <span class="text-4xl md:text-3xl text-css dark:text-js font-medium"
+  <div class='flex flex-col gap-5 justify-center'>
+    <header class='flex justify-start flex-col gap-1'>
+      <h1 class='text-6xl md:text-5xl font-bold'>Stalin Acurio</h1>
+      <span class='text-4xl md:text-3xl text-css dark:text-js font-medium'
         >Front-End Developer</span
       >
     </header>
-    <p class="text-lg md:text-base tex max-w-[60ch]">
+    <p class='text-lg md:text-base tex max-w-[60ch]'>
       Me encanta explorar el mundo del desarrollo web y experimentar con
       tecnologías modernas para construir interfaces intuitivas y visualmente
       atractivas.
     </p>
-    <ul class="flex gap-4">
+    <ul class='flex flex-wrap gap-4'>
       <li
-        class="cursor-pointer border px-3 py-1 rounded-lg transition bg-gray-800 dark:bg-gray-100 dark:hover:bg-js hover:bg-css dark:hover:border-js hover:border-css"
+        class='cursor-pointer border px-3 py-1 rounded-lg transition bg-gray-800 dark:bg-gray-100 dark:hover:bg-js hover:bg-css dark:hover:border-js hover:border-css'
       >
         <a
-          class="dark:text-black text-gray-100 font-medium flex gap-x-2"
-          href="https://github.com/StalinAM"
-          target="_blank"
-          aria-label="Enlace al repositorio de Github"
-          rel="noopener noreferrer"
+          class='dark:text-black text-gray-100 font-medium flex gap-x-2'
+          href='https://github.com/StalinAM'
+          target='_blank'
+          aria-label='Enlace al repositorio de Github'
+          rel='noopener noreferrer'
         >
-          <Github class="size-6" />
+          <Github class='size-6' />
           <span>Github</span>
         </a>
       </li>
       <li
-        class="cursor-pointer border px-3 py-1 rounded-lg transition bg-gray-800 dark:bg-gray-100 dark:hover:bg-js hover:bg-css dark:hover:border-js hover:border-css"
+        class='cursor-pointer border px-3 py-1 rounded-lg transition bg-gray-800 dark:bg-gray-100 dark:hover:bg-js hover:bg-css dark:hover:border-js hover:border-css'
       >
         <a
-          class="dark:text-black text-gray-100 font-medium flex gap-x-2"
-          href="https://www.linkedin.com/in/stalin-acurio-915561248/"
-          target="_blank"
-          aria-label="Enlace al perfil de Linkedin"
-          rel="noopener noreferrer"
-          ><Linkedin class="size-6" /><span>LinkedIn</span></a
+          class='dark:text-black text-gray-100 font-medium flex gap-x-2'
+          href='https://www.linkedin.com/in/stalin-acurio-915561248/'
+          target='_blank'
+          aria-label='Enlace al perfil de Linkedin'
+          rel='noopener noreferrer'
+          ><Linkedin class='size-6' /><span>LinkedIn</span></a
+        >
+      </li>
+      <li
+        class='cursor-pointer border px-3 py-1 rounded-lg transition bg-gray-800 dark:bg-gray-100 dark:hover:bg-js hover:bg-css dark:hover:border-js hover:border-css'
+      >
+        <a
+          class='dark:text-black text-gray-100 font-medium flex gap-x-2'
+          href='/stalin-acurio-frontend.pdf'
+          aria-label='Enlace de descarga del curriculum vitae de Stalin Acurio'
+          rel='noopener noreferrer'
+          download><Download class='size-6' /><span>Currículum</span></a
         >
       </li>
     </ul>
   </div>
-  <div class="m-auto flex justify-center">
+  <div class='m-auto flex justify-center'>
     <img
-      class="md:max-w-[80%]"
-      src="about.webp"
-      alt=""
-      width="486"
-      height="486"
+      class='md:max-w-[80%]'
+      src='about.webp'
+      alt=''
+      width='486'
+      height='486'
     />
   </div>
 </section>
