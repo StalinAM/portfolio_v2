@@ -1,67 +1,65 @@
 <section
-  id="contact"
-  class="pt-24 flex sm:pt-4 flex-col gap-4 w-full max-w-5xl mx-auto"
+  id='contact'
+  class='pt-24 flex sm:pt-4 flex-col gap-4 w-full max-w-5xl mx-auto'
 >
   <h2
-    class="text-3xl font-medium text-left mb-10 capitalize dark:text-js text-css"
+    class='text-3xl font-medium text-left mb-10 capitalize dark:text-js text-css'
   >
     Contacto
   </h2>
   <form
-    id="form"
-    class="flex flex-col gap-6 bg-light-2 dark:bg-dark-light [&>div]:flex [&>div]:flex-col [&>div]:gap-2 [&>div]:w-full last:[&>div]:flex-row w-2/3 sm:w-full sm:p-4 mx-auto py-[3rem] px-[2rem] rounded"
+    id='form'
+    class='flex flex-col gap-6 bg-light-2 dark:bg-dark-light [&>div]:flex [&>div]:flex-col [&>div]:gap-2 [&>div]:w-full last:[&>div]:flex-row w-2/3 sm:w-full sm:p-4 mx-auto py-[3rem] px-[2rem] rounded'
   >
     <div>
-      <label class="text-sm" for="name">Nombre</label>
+      <label class='text-sm' for='name'>Nombre</label>
       <input
-        class="p-2 dark:text-js text-css appearance-none dark:border-gray-200 border-gray-700 focus:outline-none dark:focus:border-js focus:border-css rounded border-2 bg-transparent text-lg"
-        type="text"
-        name="name"
-        placeholder="Ingrese su nombre"
-        id="name"
-        autocomplete="name"
+        class='p-2 dark:text-js text-css appearance-none dark:border-gray-200 border-gray-700 focus:outline-none dark:focus:border-js focus:border-css rounded border-2 bg-transparent text-lg'
+        type='text'
+        name='name'
+        placeholder='Ingrese su nombre'
+        id='name'
+        autocomplete='name'
       />
-      <span class="text-red-500 hidden">Nombre muy extenso</span>
+      <span class='text-red-500 hidden'>Nombre muy extenso</span>
     </div>
     <div>
-      <label class="text-sm" for="email">Correo electrónico</label>
+      <label class='text-sm' for='email'>Correo electrónico</label>
       <input
-        class="p-2 dark:text-js text-css appearance-none dark:border-gray-200 border-gray-700 focus:outline-none dark:focus:border-js focus:border-css rounded border-2 bg-transparent text-lg"
-        type="text"
-        name="email"
-        placeholder="Ingresa su correo electrónico"
-        id="email"
-        autocomplete="email"
+        class='p-2 dark:text-js text-css appearance-none dark:border-gray-200 border-gray-700 focus:outline-none dark:focus:border-js focus:border-css rounded border-2 bg-transparent text-lg'
+        type='text'
+        name='email'
+        placeholder='Ingresa su correo electrónico'
+        id='email'
+        autocomplete='email'
       />
-      <span class="text-red-500 hidden">Correo no válido</span>
+      <span class='text-red-500 hidden'>Correo no válido</span>
     </div>
     <div>
-      <label class="text-sm" for="project">Mensaje</label>
+      <label class='text-sm' for='project'>Mensaje</label>
       <textarea
-        class="p-2 dark:text-js text-css appearance-none dark:border-gray-200 border-gray-700 focus:outline-none dark:focus:border-js focus:border-css rounded border-2 bg-transparent text-lg"
-        name="project"
-        rows="9"
-        placeholder="Ingrese el mensaje"
-        autocomplete="off"
-        id="project"></textarea>
-      <span class="text-red-500 hidden">Mensaje muy extenso</span>
+        class='p-2 dark:text-js text-css appearance-none dark:border-gray-200 border-gray-700 focus:outline-none dark:focus:border-js focus:border-css rounded border-2 bg-transparent text-lg'
+        name='project'
+        rows='9'
+        placeholder='Ingrese el mensaje'
+        autocomplete='off'
+        id='project'></textarea>
+      <span class='text-red-500 hidden'>Mensaje muy extenso</span>
     </div>
-    <div class="items-center gap-4">
+    <div class='items-center gap-4'>
       <button
-        id="send-email"
-        type="submit"
+        id='send-email'
+        type='submit'
         disabled
-        class="block w-fit px-3 py-1 font-semibold bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-black dark:hover:bg-js hover:bg-css dark:hover:border-js hover:border-css text-base border rounded-lg transition-colors disabled:bg-slate-500 disabled:border-slate-500 disabled:text-gray-400 dark:disabled:bg-slate-500 dark:disabled:border-slate-500 dark:disabled:text-gray-400"
+        class='block w-fit px-3 py-1 font-semibold bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-black dark:hover:bg-js hover:bg-css dark:hover:border-js hover:border-css text-base border rounded-lg transition-colors disabled:bg-slate-500 disabled:border-slate-500 disabled:text-gray-400 dark:disabled:bg-slate-500 dark:disabled:border-slate-500 dark:disabled:text-gray-400'
         >Enviar mensaje</button
       >
-      <span id="success-msj" class="dark:text-js text-css hidden"
-        >Mensaje enviado</span
-      >
+      <span id='success-msj' class='dark:text-js text-css hidden'></span>
     </div>
   </form>
 </section>
 <script>
-  import { validateForm } from "../utils/form_validity";
-  validateForm();
-  document.addEventListener("astro:after-swap", validateForm);
+  import { validateForm } from '../utils/form_validity'
+  validateForm()
+  document.addEventListener('astro:after-swap', validateForm)
 </script>
