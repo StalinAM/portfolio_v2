@@ -1,89 +1,91 @@
 export const validateForm = () => {
-  const EMAIL_REGEX = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  const EMAIL_REGEX = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
 
-  const form = document.getElementById("form");
+  const form = document.getElementById('form')
 
-  const email = document.querySelector("#email");
-  const emailSpan = document.querySelector("#email+span");
+  const email = document.querySelector('#email')
+  const emailSpan = document.querySelector('#email+span')
 
-  const name = document.querySelector("#name");
-  const nameSpan = document.querySelector("#name+span");
+  const name = document.querySelector('#name')
+  const nameSpan = document.querySelector('#name+span')
 
-  const message = document.querySelector("#project");
-  const messageSpan = document.querySelector("#project+span");
+  const message = document.querySelector('#project')
+  const messageSpan = document.querySelector('#project+span')
 
-  const btnSubmit = document.querySelector("#send-email");
-  const successSpan = document.querySelector("#success-msj");
+  const btnSubmit = document.querySelector('#send-email')
+  const successSpan = document.querySelector('#success-msj')
 
-  form.addEventListener("submit", handleSubmit);
+  form.addEventListener('submit', handleSubmit)
 
-  email.addEventListener("blur", hideErrorSpan);
-  name.addEventListener("blur", hideErrorSpan);
-  message.addEventListener("blur", hideErrorSpan);
+  email.addEventListener('blur', hideErrorSpan)
+  name.addEventListener('blur', hideErrorSpan)
+  message.addEventListener('blur', hideErrorSpan)
 
-  email.addEventListener("input", validateEmail);
-  name.addEventListener("input", () => validateInput(name, 51, nameSpan));
+  email.addEventListener('input', validateEmail)
+  name.addEventListener('input', () => validateInput(name, 51, nameSpan))
 
-  message.addEventListener("input", () =>
+  message.addEventListener('input', () =>
     validateInput(message, 301, messageSpan)
-  );
+  )
 
   function hideErrorSpan() {
-    this.nextElementSibling.classList.add("hidden");
+    this.nextElementSibling.classList.add('hidden')
   }
 
   function validateEmail() {
     if (!EMAIL_REGEX.test(email.value)) {
-      email.classList.remove("focus:border-js");
-      email.classList.add("focus:border-red-500");
-      emailSpan.classList.remove("hidden");
+      email.classList.remove('focus:border-js')
+      email.classList.add('focus:border-red-500')
+      emailSpan.classList.remove('hidden')
     } else {
-      email.classList.remove("focus:border-red-500");
-      email.classList.add("focus:border-js");
-      emailSpan.classList.add("hidden");
+      email.classList.remove('focus:border-red-500')
+      email.classList.add('focus:border-js')
+      emailSpan.classList.add('hidden')
     }
-    checkFormValidity();
+    checkFormValidity()
   }
 
   function validateInput(inputElement, maxLength, errorSpanElement) {
     if (inputElement.value.length > maxLength) {
-      inputElement.classList.remove("focus:border-js");
-      inputElement.classList.add("focus:border-red-500");
-      errorSpanElement.classList.remove("hidden");
+      inputElement.classList.remove('focus:border-js')
+      inputElement.classList.add('focus:border-red-500')
+      errorSpanElement.classList.remove('hidden')
     } else {
-      inputElement.classList.remove("focus:border-red-500");
-      inputElement.classList.add("focus:border-js");
-      errorSpanElement.classList.add("hidden");
+      inputElement.classList.remove('focus:border-red-500')
+      inputElement.classList.add('focus:border-js')
+      errorSpanElement.classList.add('hidden')
     }
-    checkFormValidity();
+    checkFormValidity()
   }
   function checkFormValidity() {
     if (email.value && name.value && message.value) {
-      btnSubmit.disabled = false;
+      btnSubmit.disabled = false
     } else {
-      btnSubmit.disabled = true;
+      btnSubmit.disabled = true
     }
   }
   function handleSubmit(e) {
-    e.preventDefault();
-    successSpan.classList.remove("hidden");
+    e.preventDefault()
+    successSpan.classList.remove('hidden')
+    successSpan.value = 'Enviando...'
 
-    email.value = "";
-    name.value = "";
-    message.value = "";
-
-    const serviceID = "default_service";
-    const templateID = "template_zslq32f";
+    console.log(this)
+    const serviceID = 'default_service'
+    const templateID = 'template_zslq32f'
 
     emailjs.sendForm(serviceID, templateID, this).then(
       () => {
+        email.value = ''
+        name.value = ''
+        message.value = ''
+        successSpan.value = 'Mensaje enviado'
         setTimeout(() => {
-          successSpan.classList.add("hidden");
-        }, 1500);
+          successSpan.classList.add('hidden')
+        }, 1500)
       },
       (err) => {
-        alert(JSON.stringify(err));
+        alert(JSON.stringify(err))
       }
-    );
+    )
   }
-};
+}
