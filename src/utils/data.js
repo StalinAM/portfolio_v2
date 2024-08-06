@@ -41,7 +41,7 @@ export const components = [
 export const data = [
   {
     id: 18,
-    image: 'https://i.ibb.co/PjCKY0T/1.webp',
+    image: '/images/1.webp',
     title: 'Daniks Shop',
     description:
       'Aplicación de tienda en línea que permite a los usuarios realizar compras y los redirige a WhatsApp con los detalles de los productos seleccionados.',
@@ -52,7 +52,7 @@ export const data = [
   },
   {
     id: 17,
-    image: 'https://i.ibb.co/NTcptQ3/4.webp',
+    image: '/images/4.webp',
     title: 'Aluraflix',
     description:
       'Plataforma similar a Netflix, pero enfocada en los cursos de Alura. Aquí los usuarios podrán explorar una amplia gama de cursos organizados por categorías, y tendrán la capacidad de contribuir al contenido al agregar nuevos videos y categorías.',
@@ -69,7 +69,7 @@ export const data = [
   },
   {
     id: 16,
-    image: 'https://i.ibb.co/0tTdffD/5.webp',
+    image: '/images/5.webp',
     title: 'EasyMoney',
     description:
       'App web de finanzas personales, diseñada para simplificar la gestión del dinero, permite llevar un seguimiento rápido y fácil de los gastos y te ayuda a ahorrar.',
@@ -80,7 +80,7 @@ export const data = [
   },
   {
     id: 15,
-    image: 'https://i.ibb.co/JnrDyd8/3.webp',
+    image: '/images/3.webp',
     title: 'Hydra',
     description:
       'Desarrollé este sitio web siguiendo un diseño proporcionado por Zine, incluyendo efectos que crean una experiencia de realidad virtual.',
@@ -91,7 +91,7 @@ export const data = [
   },
   {
     id: 14,
-    image: 'https://i.ibb.co/N7cDQm3/14.webp',
+    image: '/images/14.webp',
     title: 'Screen Capture',
     description:
       'Aplicación ligera para grabar la pantalla, que permite capturar tanto el contenido del navegador como de todo el sistema. Facilita la descarga rápida y sencilla de las grabaciones.',
@@ -102,7 +102,7 @@ export const data = [
   },
   {
     id: 13,
-    image: 'https://i.ibb.co/tKY5NqJ/2.webp',
+    image: '/images/2.webp',
     title: 'GalloExpre C.A.',
     description:
       'Llevé a cabo el desarrollo de este proyecto con el objetivo de optimizar el rendimiento de la página original. Además, se optó por un diseño minimalista y funcional para modernizar la apariencia de la página.',
@@ -113,7 +113,7 @@ export const data = [
   },
   {
     id: 12,
-    image: 'https://i.ibb.co/tBKSm54/13.webp',
+    image: '/images/13.webp',
     imageBig: 'https://i.ibb.co/t2qR2gp/3.webp',
     title: 'Space Turism',
     description:
@@ -125,7 +125,7 @@ export const data = [
   },
   {
     id: 11,
-    image: 'https://i.ibb.co/tLtTnJd/11.webp',
+    image: '/images/11.webp',
     title: 'Piedra, Papel o Tijera',
     description:
       'Sitio web para jugar a Piedra, Papel o Tijera con una interfaz sencilla y fácil de usar.',
@@ -136,7 +136,7 @@ export const data = [
   },
   {
     id: 10,
-    image: 'https://i.ibb.co/XL7zSS8/6.webp',
+    image: '/images/6.webp',
     title: 'Portafolio',
     description:
       'Mi portafolio web donde encontrarás mi trabajo y habilidades en diseño, desarrollo y tecnología, con ejemplos de proyectos anteriores.',
@@ -147,7 +147,7 @@ export const data = [
   },
   {
     id: 9,
-    image: 'https://i.ibb.co/Rvk74cp/7.webp',
+    image: '/images/7.webp',
     title: 'Plantilla portafolio web',
     description:
       'Portafolio de desarrollador web que cuenta con varias secciones, donde se exhiben los proyectos filtrados por categorías y con un formulario de contacto.',
@@ -169,7 +169,7 @@ export const data = [
   },
   {
     id: 7,
-    image: 'https://i.ibb.co/TmTpTgD/10.webp',
+    image: '/images/10.webp',
     title: 'Crowdfunding',
     description:
       'Página para recaudar fondos mediante campañas. Con ella, se puede visualizar el progreso de la meta y la participación de los apoyadores en tiempo real.',
@@ -180,7 +180,7 @@ export const data = [
   },
   {
     id: 6,
-    image: 'https://i.ibb.co/7GZsFm3/12.webp',
+    image: '/images/12.webp',
     title: 'Generador de Consejos',
     description:
       'Sitio web en el cual al hacer clic en el icono verde, se genera un consejo aleatorio mediante una llamada a una API.',
@@ -191,7 +191,7 @@ export const data = [
   },
   {
     id: 5,
-    image: 'https://i.ibb.co/cThj0Fv/9.webp',
+    image: '/images/9.webp',
     title: 'Fylo',
     description:
       'Página web de servicios en la nube que presenta los servicios y testimonios, con un módulo incorporado para ingresar y validar direcciones de correo electrónico.',
