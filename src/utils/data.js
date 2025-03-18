@@ -40,6 +40,17 @@ export const components = [
 ]
 export const data = [
   {
+    id: 19,
+    image: '/images/15.webp',
+    title: 'Routico',
+    description:
+      'Routico es una aplicación web diseñada para optimizar la planificación y gestión de rutas de entrega. Permite la creación y administración de conductores, asignación de rutas personalizadas y seguimiento eficiente de las entregas.',
+    tools: ['Astro', 'Firebase', 'React', 'Tailwind', 'leaflet'],
+    category: 'complete',
+    web: 'https://routico.vercel.app/',
+    repository: 'https://github.com/StalinAM/routico-web-app'
+  },
+  {
     id: 18,
     image: '/images/1.webp',
     title: 'Daniks Shop',
